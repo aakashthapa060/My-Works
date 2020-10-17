@@ -1,0 +1,143 @@
+header{
+    width: 100%;
+    height: 10vh;
+    background: #fff;
+    display: flex;
+
+    align-items: center;
+}
+header .headerBars{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100px;
+    height: 100px;
+    background: #243E7A;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 2;
+}
+header .headerBars .headerBarsBox{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+header .headerBars .headerBarsBox .bar{
+    width: 30px;
+    height: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .headerBars .headerBarsBox .bar span{
+    width: 5px;
+    height: 5px;
+    background: #fff;
+}
+header .headerLogo{
+    position: relative;
+    left: 175px;
+    line-height: 10vh;
+    font-family: 'Nunito',sans-serif;
+    letter-spacing: 1px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #111;
+}
+header .headernav{
+    position: relative;
+    left: 250px;
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .headernav a{
+    font-family: 'Nunito',sans-serif;
+    text-decoration: none;
+    color: #3d3d3d;
+    font-size: 16px;
+    font-weight: 600;
+}
+header .headerContactMe{
+    position: absolute;
+    right: 30px;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 15px;
+    border: 2px solid #d66052;
+    color: #d66052;
+    font-family: 'Nunito',sans-serif;
+    transition: 0.5s ease;
+}
+header .headerContactMe .fas{
+    margin-left: 6px;
+}
+header .headerContactMe:hover{
+    background: #d66052;
+    color: #fff;
+}
+.header2{
+    position: fixed;
+    left: -250px;
+    top: 0vh;
+    width:250px;
+    height: 100%;
+    background: #243E7A;
+    margin-right: 200px;
+    overflow: hidden;
+    z-index:3;
+}
+.header2 .fas{
+    position: relative;
+    width: 100%;
+    height: 30px;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    font-size: 30px;
+    margin-bottom: 40px;
+    
+}
+.header2 .header2Nav{
+    position: relative;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header2 .header2Nav a{
+    font-size: 18px;
+    color: #fff;
+    text-decoration:none;
+    font-family:  'Nunito', sans-serif;
+    transition: 0.5s ease;
+}
+.header2 .header2Nav a:hover{
+    transform: scale(2)
+}
+@media only screen and (max-width: 650px){
+    header .headerLogo{
+        left: 100px;
+        font-size:25px;
+    }
+    header .headerBars{
+        width: 75px;
+        height: 75px;
+    }
+    header .headernav{
+    display:none;
+    }
+
+}

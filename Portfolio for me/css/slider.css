@@ -1,0 +1,248 @@
+.servicePart {
+    margin: 40px auto;
+    width: 100%;
+    height: 150vh;
+    margin-top: 100px;
+    background: linear-gradient(-45deg, #FF4B38, #FF4B80);
+}
+
+.serviceWrapper {
+    position: relative;
+    /*border: 1px solid #000;*/
+    width: 90%;
+    height: 100%;
+    margin: 0px auto;
+}
+
+.servicePart .servicePartSologon {
+    position: relative;
+    top: 40px;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 1100px) {
+    .serviceWrapper {
+        width: 80%;
+    }
+}
+
+
+.servicePart .servicePartSologon h2 {
+    position: relative;
+    color: #efefef;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Nunito', sans-serif;
+    margin-bottom: 20px;
+}
+
+.servicePart .servicePartSologon h1 {
+    position: relative;
+    font-size: 40px;
+    font-weight: 600;
+    font-family: 'Baloo Tamma 2', sans-serif;
+    margin-bottom: 30px;
+    line-height: 45px;
+    color: #fff;
+}
+
+@media only screen and (max-width: 400px){
+    .servicePart .servicePartSologon h1{
+        font-size: 23px;
+        line-height: 30px;
+    }
+}
+.servicePart .serviceButtons{
+    width: 100px;
+    float: right;
+    width: 100px;
+    height: 30px;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+}
+.servicePart .serviceButtons div{
+    width: 30px;
+    height: 30px;
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 18px;
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+.servicePart .serviceButtons div:hover{
+    background: #fff;
+    color: #FF4B38;
+}
+.servicePart .ServiceSlider {
+    width: 100%;
+    height: 200px;
+}
+
+.servicePart .ServiceSlider .ServiceOption {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.servicePart .ServiceSlider .ServiceOption .card {
+    width: 164px;
+    height: 169px;
+    border: 1px solid #efefef;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    font-size: 20px;
+    transition: 0.5s ease;
+}
+
+.servicePart .ServiceSlider .ServiceOption .card:first-child {
+    background: linear-gradient(170deg, #1459ba 0%, #0042a1 100%);
+    border: 1px solid #1459ba;
+}
+
+.servicePart .ServiceSlider .ServiceOption .card .fab {
+    font-size: 40px;
+}
+
+.servicePart .ServiceSlider .ServiceOption .card .fas {
+    font-size: 40px;
+}
+
+.servicePart .ServiceSlider .ServiceOption .card h2 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'nunito', sans-serif;
+}
+
+.servicePart .ServiceSlider .ServiceOption .card:hover {
+    background: linear-gradient(170deg, #1459ba 0%, #0042a1 100%);
+    border: 1px solid #1459ba;
+}
+
+.servicePart .ContentPart {
+    position: relative;
+    top: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.servicePart .serviceTextPart {
+    /*border: 1px solid #ff00ff;*/
+    width: 500px;
+    height: 500px;
+    color: #fff;
+    font-family: 'Nunito', sans-serif;
+}
+
+.servicePart .serviceTextPart h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.servicePart .serviceTextPart p {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.servicePart .ServicePartImgPart {
+    /*border: 1px solid #ff00ff;*/
+    width: 500px;
+    height: 500px;
+    background: url('../img/servicesection/webdesign.svg');
+    background-size: cover;
+    background-position: center;
+}
+
+@media only screen and (max-width: 1100px) {
+     .servicePart {
+        height: 230vh;
+    }
+
+    .serviceWrapper {
+        width: 80%;
+    }
+    .servicePart .serviceButtons{
+        display: flex;
+    }
+    .servicePart .ServiceSlider {
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+    }
+
+    .servicePart .ServiceSlider .ServiceOption {
+        position: relative;
+        width: 1100px;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .servicePart .ContentPart {
+        /* border: 1px solid #000; */
+        position: relative;
+        top: 40px;
+        height: 900px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .servicePart .serviceTextPart {
+        /*border: 1px solid #ff00ff;*/
+        width: 100%;
+        height: auto;
+        color: #fff;
+        font-family: 'Nunito', sans-serif;
+    }
+
+    .servicePart .serviceTextPart h2 {
+        font-size: 30px;
+    }
+
+    .servicePart .serviceTextPart p {
+        font-size: 15px;
+    }
+
+    .servicePart .ServicePartImgPart {
+        /*border: 1px solid #ff00ff;*/
+        width: 100%;
+        height: 500px;
+    }
+    
+}
+@media only screen and (max-width: 600px){
+    /* .servicePart {
+        height: 150vh;
+    } */
+    .serviceWrapper {
+        width: 100%;
+        
+    }
+    .servicePart .servicePartSologon h2 {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    .servicePart .servicePartSologon h1{
+        font-size: 25px;
+        line-height: 40px;
+    }
+    
+}
